@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../scss/styles.css">
+  <script src="https://kit.fontawesome.com/6057d270df.js" crossorigin="anonymous"></script>
+  <script src="./js/app.js" defer></script>
+  <script src="./js/carousel.js" defer></script>
+  <script src="../dist/js/video.js" defer></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <title>O'ahu</title>
+</head>
+<body>
+  
+  <header class="header-main">
+    <div class="header-container">
+      <button class="toggle-nav"><i class="fas fa-bars fa-3x bars "></i><p>Menu</p></button>
+      <p class="nav-view">Home</p>
+      <h1 class="h1-banner"><a href="./index.html">O'ahu Hawaii</a></h1>
+      <p class="nav-view">Planning</p>
+    </div><!--End Container-->
+  </header> <!--End Container-->
+
+  <!-- Nav Overlay -->
+  <nav class="navbar navbar-container nav-overlay">
+    <ul class="navbar-ul-container">
+      <li class="navbar-li"><a href="#"><i class="fas fa-times fa-2x close-btn"></i></a></li>
+      <li class="navbar-li"><a href="./index.html">Home</a></li>
+      <li class="navbar-li"><a href="../dist/Planning.html">Planning</a></li>
+    </ul>
+  </nav> <!--end container-->
+
+
+   <!-- End Nav Overlay -->
+
+   <!-- Cover Image -->
+  <div class="cover-image-container">
+    <div class="cover-image-overlay">
+      <h1 class="h1-cover-overlay">O'ahu, Hawaii</h1>
+    </div>
+ 
+  </div>
+  <!-- Cover Image -->
+
+
+  <main class="main-container">
+    <!-- Welcome to Oahu -->
+    <h1 class="main-heading">Welcome to Oahu</h1>
+    <p class="main-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quibusdam aperiam aspernatur molestias totam nihil architecto, quisquam magnam deleniti voluptatem sapiente autem nesciunt quos eaque fugit facilis sit temporibus aliquid nostrum quod. Eaque aspernatur dignissimos earum ipsum consequuntur cum repellendus eligendi deserunt blanditiis neque et magnam consequatur in, commodi quisquam quam error deleniti fuga tenetur autem rem repellat tempore amet? Corporis officia iure perferendis nobis accusamus reiciendis autem est, accusantium dolores. Natus dolor illo iure consequuntur aspernatur explicabo magnam. Quis.</p>
+     <!-- End Welcome to Oahu -->
+
+    <!-- Inspiration -->
+
+    <h1 class="video-heading">Get inspired!</h1>
+    <video
+      src="./video/complete-video.mp4"
+      id="video"
+      class="screen"
+      
+    ></video>
+    <div class="controls">
+      <button class="btn" id="play">
+        <i class="fa fa-play fa-2x"></i>
+      </button>
+      <button class="btn" id="stop">
+        <i class="fa fa-stop fa-2x"></i>
+      </button>
+      <input
+        type="range"
+        id="progress"
+        class="progress"
+        min="0"
+        max="100"
+        step="0.1"
+        value="0"
+      />
+      <span class="timestamp" id="timestamp">00:00</span>
+    </div>
+
+    <!-- End Inspiration -->
+
+    <!-- Activites -->
+    <h1 class="heading heading">Activites in Oahu</h1>
+    <div class="carousel">
+      <button class="carousel-button carousel-left is-hidden">
+        <i class="fas fa-arrow-left fa-2x"></i>
+      </button>
+      <div class="carousel-track-container">
+        <ul class="carousel-track">
+          <li class="carousel-slide current-slide">
+            <img class="carousel-image" src="./images/hiking-2.jpg" alt="">
+          </li>
+          <li class="carousel-slide">
+            <img class="carousel-image" src="./images/kayaking-1.jpg" alt="">
+          </li>
+          <li class="carousel-slide">
+            <img class="carousel-image" src="./images/surf-2.jpg" alt="">
+          </li>
+        </ul> <!--End Track-->
+      </div>
+      <button class="carousel-button carousel-right">
+        <i class="fas fa-arrow-right fa-2x"></i>
+      </button>
+  
+      <div class="carousel-nav">
+        <button class="carousel-indicator current-slide"></button>
+        <button class="carousel-indicator"></button>
+        <button class="carousel-indicator"></button>
+      </div>
+    </div> <!--End carousel-->
+    <!-- End Activites -->
+
+   
+  </main>
+  <footer id="footer-container">
+    <ul class="ul-social">
+      <li><span class="hashtag">#Visit O'ahu</span></li>
+      <li class="li-social"><i class="fab fa-twitter fa-2x social-icon"></i></li>
+      <li class="li-social"><i class="fab fa-facebook-f fa-2x social-icon"></i></li>
+    </ul>
+  </footer>
+
+ 
+  
+</body>
+</html>

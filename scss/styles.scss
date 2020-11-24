@@ -1,0 +1,668 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+
+	.heading {
+		font-weight: 600;
+	}
+}
+
+// Colors
+:root {
+	--main-bg-color: #00688c;
+}
+
+:root {
+	--no-margin: 0;
+	--no-padding: 0;
+}
+
+// End Colors
+
+// Header
+.header-main {
+	min-width: 320px;
+}
+
+.header-container {
+	width: 79%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--main-bg-color);
+	margin: 1rem 2rem 0 0.5rem;
+
+	.toggle-nav {
+		width: 18%;
+		border: none;
+		cursor: pointer;
+		background: white;
+		color: var(--main-bg-color);
+
+		p {
+			font-size: 1rem;
+			line-height: 0;
+			margin: 0;
+			padding: 0;
+			padding-top: 0.7rem;
+		}
+	}
+
+	.h1-banner {
+		font-family: 'Pacifico', cursive;
+		font-weight: 200;
+		border-bottom: 1px solid black;
+		a {
+			text-decoration: none;
+			color: var(--main-bg-color);
+		}
+	}
+
+	.nav-view {
+		display: none;
+	}
+}
+
+.navbar-container {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	background: var(--main-bg-color);
+	transform: translateX(100%);
+	transition: transform 0.7s ease;
+}
+
+.navbar-ul-container {
+	height: 50%;
+	padding: var(--no-padding);
+	margin: var(--no-margin);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.navbar-li {
+		list-style-type: none;
+		font-size: 2.5rem;
+		line-height: 5rem;
+		a {
+			text-decoration: none;
+		}
+
+		:visited,
+		:hover,
+		:active {
+			color: white;
+		}
+	}
+}
+.show-nav {
+	transform: translateX(0);
+	transition: transform 0.7 ease;
+}
+
+.transparentBcg {
+	visibility: visible;
+}
+// End Navbar
+// End Header
+
+// Main
+// Home Page Overlay
+.cover-image-container {
+	min-width: 295px;
+	min-height: 500px;
+}
+
+.cover-image-overlay {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../dist/images/cover-5.jpg);
+	background-size: cover;
+	width: 100%;
+	min-height: 500px;
+}
+
+.h1-cover-overlay {
+	color: white;
+}
+// End Home Page Overlay
+
+// Planning Page Overlay
+.cover-image-planning-container {
+	min-height: 350px;
+	min-width: 295px;
+}
+
+.cover-image-planning-overlay {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../dist/images/plan-image-2.jpg);
+	background-size: cover;
+	width: 100%;
+	min-height: 350px;
+}
+// End Planning Page Overlay
+
+// Packing: read more
+#more {
+	display: none;
+}
+
+#readBtn {
+	background-color: white;
+	color: black;
+	border: 2px solid #00688c;
+	width: 150px;
+	height: 35px;
+	font-size: 1rem;
+	transition-duration: 0.4s;
+	font-family: 'Raleway', sans-serif;
+}
+
+#readBtn:hover {
+	background-color: #00688c;
+	color: white;
+}
+
+#readBtn:focus {
+	outline: none;
+}
+
+// End Packing: read more
+.main-container {
+	width: 86%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 0 auto;
+
+	.main-para {
+		line-height: 1.5rem;
+		font-size: 1.3rem;
+	}
+}
+
+// End Main
+
+// Get Inspired Video
+#video {
+	// padding-bottom: 1rem;
+}
+.screen {
+	cursor: pointer;
+	width: 100%;
+	background-color: #000 !important;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.controls {
+	background: #333;
+	color: #fff;
+	width: 100%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem 0 0.5rem 0;
+}
+
+.controls .btn {
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+}
+
+.controls .fa-play {
+	color: #28a745;
+}
+
+.controls .fa-stop {
+	color: #dc3545;
+}
+
+.controls .fa-pause {
+	color: #fff;
+}
+
+.controls .timestamp {
+	color: #fff;
+	font-weight: bold;
+	margin-left: 1rem;
+}
+
+.btn:focus {
+	outline: 0;
+}
+
+// Progress Bar Video
+
+input[type='range'] {
+	-webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+	width: 100%; /* Specific width is required for Firefox. */
+	background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+}
+
+input[type='range']:focus {
+	outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type='range']::-ms-track {
+	width: 100%;
+	cursor: pointer;
+
+	/* Hides the slider so custom styles can be added */
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	border: 1px solid #000000;
+	height: 36px;
+	width: 16px;
+	border-radius: 3px;
+	background: #ffffff;
+	cursor: pointer;
+	margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+
+/* All the same stuff for Firefox */
+input[type='range']::-moz-range-thumb {
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	border: 1px solid #000000;
+	height: 36px;
+	width: 16px;
+	border-radius: 3px;
+	background: #ffffff;
+	cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type='range']::-ms-thumb {
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	border: 1px solid #000000;
+	height: 36px;
+	width: 16px;
+	border-radius: 3px;
+	background: #ffffff;
+	cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	background: #3071a9;
+	border-radius: 1.3px;
+	border: 0.2px solid #010101;
+}
+
+input[type='range']:focus::-webkit-slider-runnable-track {
+	background: #367ebd;
+}
+
+input[type='range']::-moz-range-track {
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	background: #3071a9;
+	border-radius: 1.3px;
+	border: 0.2px solid #010101;
+}
+
+input[type='range']::-ms-track {
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+	background: transparent;
+	border-color: transparent;
+	border-width: 16px 0;
+	color: transparent;
+}
+input[type='range']::-ms-fill-lower {
+	background: #2a6495;
+	border: 0.2px solid #010101;
+	border-radius: 2.6px;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type='range']:focus::-ms-fill-lower {
+	background: #3071a9;
+}
+input[type='range']::-ms-fill-upper {
+	background: #3071a9;
+	border: 0.2px solid #010101;
+	border-radius: 2.6px;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type='range']:focus::-ms-fill-upper {
+	background: #367ebd;
+}
+
+// End Progress bar video
+
+// End Get Inspired Video
+
+.heading {
+	padding-top: 4rem;
+}
+
+// Carousel
+.carousel {
+	position: relative;
+	height: 450px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.carousel-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.carousel-track-container {
+	// padding: 10px;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.carousel-track {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	height: 100%;
+	transition: transform 400ms ease-in;
+}
+
+.carousel-slide {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.carousel-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: transparent;
+	border: 0;
+	color: black;
+	cursor: pointer;
+}
+
+.carousel-left {
+	left: -40px;
+}
+.carousel-right {
+	right: -50px;
+}
+
+.carousel-nav {
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
+}
+
+.carousel-indicator {
+	border: 0;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	background: rgba(0, 0, 0, .3);
+	margin: 0 12px;
+	cursor: pointer;
+}
+
+.current-slide {
+	background: rgba(0, 0, 0, .75);
+}
+
+.is-hidden {
+	display: none;
+}
+
+// End Carousel
+
+// Weather
+
+.main-weather-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-color: #fff;
+	display: block;
+	border-radius: 10px;
+	padding-bottom: 1rem;
+	padding-top: 3rem;
+
+	.app-title p {
+		text-align: center;
+		padding: 15px;
+		margin: 0 auto;
+		font-size: 1.5em;
+		color: #293251;
+	}
+}
+
+.notification {
+	background-color: #f8d7da;
+	display: none;
+	p {
+		color: #721c24;
+		font-size: 1.2em;
+		margin: 0;
+		text-align: center;
+		padding: 10px 0;
+	}
+}
+
+.weather-container {
+	.weather-icon {
+		.img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+
+.temperature-value {
+	p {
+		padding: 0;
+		margin: 0;
+		color: #293251;
+		font-size: 4em;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	span {
+		color: #293251;
+		font-size: 0.5em;
+	}
+}
+
+.temperature-description p {
+	padding: 8px;
+	margin: 0;
+	color: #293251;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.location p {
+	margin: 0;
+	padding: 0;
+	color: #293251;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+// End Weather
+
+// Footer
+#footer-container {
+	width: 100%;
+	margin-top: 4rem;
+	height: 10vh;
+	background-color: #f0f0f0;
+}
+
+.ul-social {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--main-bg-color);
+
+	span {
+		font-size: 1.5rem;
+	}
+
+	li {
+		list-style-type: none;
+		padding: 0;
+		padding-left: 1rem;
+		margin: 0;
+	}
+}
+
+// End Footer
+
+// Media Queries
+// Landscape View Mobile Phones
+@media (min-width: 568px) {
+	.header-container {
+		margin: 0;
+		width: 66%;
+	}
+	.carousel {
+		height: 195px;
+	}
+
+	.screen {
+		width: 96%;
+	}
+
+	.controls {
+		width: 96%;
+	}
+	#footer-container {
+		height: 14vh;
+	}
+}
+// End Landscape View Mobile Phones
+
+// Tablet
+@media (min-width: 768px) {
+	.header-container {
+		margin: 0;
+		width: 63%;
+	}
+	.carousel {
+		height: 330px;
+	}
+
+	.screen {
+		width: 100%;
+	}
+
+	.controls {
+		width: 100%;
+	}
+	.carousel {
+		height: 365px;
+		width: 90%;
+	}
+}
+
+// Landscape Tablet
+@media (min-width: 1000px) {
+	.header-container {
+		margin: 0;
+		width: 100%;
+		justify-content: center;
+	}
+	.toggle-nav {
+		display: none;
+	}
+	.screen {
+		width: 100%;
+	}
+
+	.controls {
+		width: 100%;
+	}
+
+	.carousel {
+		height: 450px;
+		width: 95%;
+	}
+}
+
+// End Tablet
+
+// Desktop
+@media (min-width: 1280px) {
+	.header-container {
+		margin: 0;
+		justify-content: center;
+	}
+	.main-container {
+		width: 70%;
+	}
+
+	.cover-image-container {
+		height: 900px;
+	}
+
+	.cover-image-overlay {
+		height: 100%;
+	}
+
+	.h1-cover-overlay {
+		font-size: 50px;
+	}
+
+	.toggle-nav {
+		display: none;
+	}
+	.screen {
+		width: 100%;
+	}
+
+	.controls {
+		width: 100%;
+	}
+
+	.carousel {
+		height: 600px;
+		width: 95%;
+	}
+}
+
+// End Desktop
