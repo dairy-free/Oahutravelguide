@@ -23,6 +23,10 @@ body {
 // Header
 .header-main {
 	min-width: 320px;
+	background-color: #ffffff;
+	position: sticky;
+	top: 0;
+	z-index: 98;
 }
 
 .header-container {
@@ -59,10 +63,16 @@ body {
 		}
 	}
 
-	.nav-view {
-		display: none;
+	.header-items {
+		display: inline;
 	}
 }
+
+// Hidden & active classes
+.nav-active {
+	display: none;
+}
+// End Hidden & active classes
 
 .navbar-container {
 	position: fixed;
@@ -116,6 +126,7 @@ body {
 .cover-image-container {
 	min-width: 295px;
 	min-height: 500px;
+	height: 100vh;
 }
 
 .cover-image-overlay {
@@ -125,6 +136,7 @@ body {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../dist/images/cover-5.jpg);
 	background-size: cover;
 	width: 100%;
+	height: 100%;
 	min-height: 500px;
 }
 
@@ -628,16 +640,22 @@ input[type='range']:focus::-ms-fill-upper {
 
 // Desktop
 @media (min-width: 1280px) {
-	.header-container {
-		margin: 0;
-		justify-content: center;
+	// Navbar
+	.header {
+		width: 100%;
 	}
+	.header-container {
+		width: 50%;
+		margin: 0 auto;
+		justify-content: space-between;
+	}
+	.nav-active {
+		display: block;
+	}
+	// End Navbar
+
 	.main-container {
 		width: 70%;
-	}
-
-	.cover-image-container {
-		height: 100vh;
 	}
 
 	.cover-image-overlay {

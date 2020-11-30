@@ -19,6 +19,11 @@ body .heading {
 
 .header-main {
   min-width: 320px;
+  background-color: #ffffff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 98;
 }
 
 .header-container {
@@ -63,7 +68,11 @@ body .heading {
   color: var(--main-bg-color);
 }
 
-.header-container .nav-view {
+.header-container .header-items {
+  display: inline;
+}
+
+.nav-active {
   display: none;
 }
 
@@ -134,6 +143,7 @@ body .heading {
 .cover-image-container {
   min-width: 295px;
   min-height: 500px;
+  height: 100vh;
 }
 
 .cover-image-overlay {
@@ -150,6 +160,7 @@ body .heading {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../dist/images/cover-5.jpg);
   background-size: cover;
   width: 100%;
+  height: 100%;
   min-height: 500px;
 }
 
@@ -660,17 +671,21 @@ input[type='range']:focus::-ms-fill-upper {
 }
 
 @media (min-width: 1280px) {
+  .header {
+    width: 100%;
+  }
   .header-container {
-    margin: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav-active {
+    display: block;
   }
   .main-container {
     width: 70%;
-  }
-  .cover-image-container {
-    height: 100vh;
   }
   .cover-image-overlay {
     height: 100%;
