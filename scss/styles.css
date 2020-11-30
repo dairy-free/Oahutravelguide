@@ -670,7 +670,7 @@ input[type='range']:focus::-ms-fill-upper {
     width: 70%;
   }
   .cover-image-container {
-    height: 900px;
+    height: 100vh;
   }
   .cover-image-overlay {
     height: 100%;
