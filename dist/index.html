@@ -7,7 +7,7 @@
   <script src="https://kit.fontawesome.com/6057d270df.js" crossorigin="anonymous"></script>
   <script src="./js/app.js" defer></script>
   <script src="./js/carousel.js" defer></script>
-  <script src="../dist/js/video.js" defer></script>
+  <script src="./js/weather.js" defer></script>
   
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -20,9 +20,9 @@
   <!-- Nav Overlay Mobile -->
   <nav class="navbar navbar-container nav-overlay">
     <ul class="navbar-ul-container">
-      <li class="navbar-li"><a href="#"><i class="fas fa-times fa-2x close-btn"></i></a></li>
+      <li class="navbar-li navbar-close"><a href="#"><i class="fas fa-times fa-2x close-btn"></i></a></li>
       <li class="navbar-li"><a href="./index.html">Home</a></li>
-      <li class="navbar-li"><a href="../dist/Planning.html">Planning</a></li>
+      <li class="navbar-li"><a href="#">Planning</a></li>
     </ul>
   </nav> <!--end container-->
 
@@ -44,7 +44,7 @@
       <button class="toggle-nav"><i class="fas fa-bars fa-3x bars "></i><p>Menu</p></button>
       <p class="nav-active"><a href="./index.html">Home</a></p>
       <h1 class="h1-banner"><a href="./index.html">O'ahu Hawaii</a></h1>
-      <p class="nav-active"><a href="./Planning.html">Planning</a></p>
+      <p class="nav-active"><a href="#">Planning</a></p>
     </div><!--End Container-->
   </header> <!--End Container-->
 <!-- End NavBar Main -->
@@ -54,38 +54,16 @@
     <p class="main-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quibusdam aperiam aspernatur molestias totam nihil architecto, quisquam magnam deleniti voluptatem sapiente autem nesciunt quos eaque fugit facilis sit temporibus aliquid nostrum quod. Eaque aspernatur dignissimos earum ipsum consequuntur cum repellendus eligendi deserunt blanditiis neque et magnam consequatur in, commodi quisquam quam error deleniti fuga tenetur autem rem repellat tempore amet? Corporis officia iure perferendis nobis accusamus reiciendis autem est, accusantium dolores. Natus dolor illo iure consequuntur aspernatur explicabo magnam. Quis.</p>
      <!-- End Welcome to Oahu -->
 
-    <!-- Inspiration -->
-
+    <!-- Inspiration Video -->
     <h1 class="video-heading">Get inspired!</h1>
-    <video
-      src="./video/complete-video.mp4"
-      id="video"
-      class="screen"
-      
-    ></video>
-    <div class="controls">
-      <button class="btn" id="play">
-        <i class="fa fa-play fa-2x"></i>
-      </button>
-      <button class="btn" id="stop">
-        <i class="fa fa-stop fa-2x"></i>
-      </button>
-      <input
-        type="range"
-        id="progress"
-        class="progress"
-        min="0"
-        max="100"
-        step="0.1"
-        value="0"
-      />
-      <span class="timestamp" id="timestamp">00:00</span>
-    </div>
+    <video controls width="100%">
+      <source src="./video/complete-video.mp4" type="video/webm">
 
-    <!-- End Inspiration -->
+    </video>
+    <!-- End Inspiration Video -->
 
     <!-- Activites -->
-    <h1 class="heading heading">Activites in Oahu</h1>
+    <h1 class="heading">Activites</h1>
     <div class="carousel">
       <button class="carousel-button carousel-left is-hidden">
         <i class="fas fa-arrow-left fa-2x"></i>
@@ -115,6 +93,38 @@
     </div> <!--End carousel-->
     <!-- End Activites -->
 
+    <section class="packing">
+      <h1 class="main-heading heading h1-packing ">What to pack</h1>
+      <p class="p-packing main-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas officia saepe quod labore molestiae blanditiis totam, vitae nesciunt fugit error? <span id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi possimus aliquid quo alias nam dolorem asperiores, rem voluptas repellendus nostrum!</span></p>
+      <button id="readBtn">Read More</button>
+    </section>
+
+
+
+
+     <!-- Weather -->
+    
+     <div class="main-weather-container">
+      <div class="app-title">
+          <p>Current Weather</p>
+      </div>
+      <div class="notification"> </div>
+      <div class="weather-container">
+          <div class="weather-icon">
+              <img src="./images/icon-images/unknown.png" alt="">
+          </div>
+          <div class="temperature-value">
+              <p>- °<span>C</span></p>
+          </div>
+          <div class="temperature-description">
+              <p> - </p>
+          </div>
+          <div class="location">
+              <p>-</p>
+          </div>
+      </div>
+  </div>
+    <!-- End Weather -->
    
   </main>
   <footer id="footer-container">

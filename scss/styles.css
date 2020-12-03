@@ -8,6 +8,10 @@ body .heading {
   font-weight: 600;
 }
 
+body a {
+  color: var(--main-bg-color);
+}
+
 :root {
   --main-bg-color: #00688c;
 }
@@ -18,12 +22,13 @@ body .heading {
 }
 
 .header-main {
+  z-index: 4;
   min-width: 320px;
   background-color: #ffffff;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 98;
+  margin-bottom: 3rem;
 }
 
 .header-container {
@@ -82,7 +87,7 @@ body .heading {
   right: 0;
   width: 100%;
   height: 100%;
-  z-index: 3;
+  z-index: 99;
   background: var(--main-bg-color);
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -93,7 +98,7 @@ body .heading {
 }
 
 .navbar-ul-container {
-  height: 50%;
+  height: 80%;
   padding: var(--no-padding);
   margin: var(--no-margin);
   display: -webkit-box;
@@ -134,6 +139,10 @@ body .heading {
   transition: -webkit-transform 0.7 ease;
   transition: transform 0.7 ease;
   transition: transform 0.7 ease, -webkit-transform 0.7 ease;
+}
+
+.hide-scroll {
+  overflow: hidden;
 }
 
 .transparentBcg {
@@ -233,188 +242,13 @@ body .heading {
   font-size: 1.3rem;
 }
 
-.screen {
-  cursor: pointer;
-  width: 100%;
-  background-color: #000 !important;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.controls {
-  background: #333;
-  color: #fff;
-  width: 100%;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0.5rem 0 0.5rem 0;
-}
-
-.controls .btn {
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-}
-
-.controls .fa-play {
-  color: #28a745;
-}
-
-.controls .fa-stop {
-  color: #dc3545;
-}
-
-.controls .fa-pause {
-  color: #fff;
-}
-
-.controls .timestamp {
-  color: #fff;
-  font-weight: bold;
-  margin-left: 1rem;
-}
-
-.btn:focus {
-  outline: 0;
-}
-
-input[type='range'] {
-  -webkit-appearance: none;
-  /* Hides the slider so that custom slider can be made */
-  width: 100%;
-  /* Specific width is required for Firefox. */
-  background: transparent;
-  /* Otherwise white in Chrome */
-}
-
-input[type='range']::-webkit-slider-thumb {
-  -webkit-appearance: none;
-}
-
-input[type='range']:focus {
-  outline: none;
-  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
-}
-
-input[type='range']::-ms-track {
-  width: 100%;
-  cursor: pointer;
-  /* Hides the slider so custom styles can be added */
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
-
-/* Special styling for WebKit/Blink */
-input[type='range']::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
-  cursor: pointer;
-  margin-top: -14px;
-  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  /* Add cool effects to your sliders! */
-}
-
-/* All the same stuff for Firefox */
-input[type='range']::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
-  cursor: pointer;
-}
-
-/* All the same stuff for IE */
-input[type='range']::-ms-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
-  cursor: pointer;
-}
-
-input[type='range']::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #3071a9;
-  border-radius: 1.3px;
-  border: 0.2px solid #010101;
-}
-
-input[type='range']:focus::-webkit-slider-runnable-track {
-  background: #367ebd;
-}
-
-input[type='range']::-moz-range-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #3071a9;
-  border-radius: 1.3px;
-  border: 0.2px solid #010101;
-}
-
-input[type='range']::-ms-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  border-width: 16px 0;
-  color: transparent;
-}
-
-input[type='range']::-ms-fill-lower {
-  background: #2a6495;
-  border: 0.2px solid #010101;
-  border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-}
-
-input[type='range']:focus::-ms-fill-lower {
-  background: #3071a9;
-}
-
-input[type='range']::-ms-fill-upper {
-  background: #3071a9;
-  border: 0.2px solid #010101;
-  border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-}
-
-input[type='range']:focus::-ms-fill-upper {
-  background: #367ebd;
-}
-
 .heading {
   padding-top: 4rem;
 }
 
 .carousel {
   position: relative;
+  z-index: 1;
   height: 450px;
   width: 80%;
   margin: 0 auto;
@@ -681,11 +515,21 @@ input[type='range']:focus::-ms-fill-upper {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .header-container a:link,
+  .header-container a:hover,
+  .header-container a:active,
+  .header-container a:visited {
+    text-decoration: none;
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
+  }
   .nav-active {
     display: block;
+    font-size: 1.5rem;
   }
   .main-container {
-    width: 70%;
+    width: 50%;
   }
   .cover-image-overlay {
     height: 100%;

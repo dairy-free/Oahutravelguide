@@ -1,0 +1,4 @@
+Ver 1.4
+
+- Working Navbar overlay. Fix was to play around with the Z-index
+- When navOverlay is displayed the overflow on the body is hidden
