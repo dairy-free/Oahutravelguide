@@ -31,7 +31,7 @@ body {
 	background-color: #ffffff;
 	position: sticky;
 	top: 0;
-	margin-bottom: 3rem;
+	// margin-bottom: 2rem;
 }
 
 .header-container {
@@ -209,6 +209,10 @@ body {
 	text-align: center;
 	margin: 0 auto;
 
+	.main-heading {
+		margin-bottom: 3rem;
+	}
+
 	.main-para {
 		line-height: 1.5rem;
 		font-size: 1.3rem;
@@ -217,21 +221,21 @@ body {
 
 // End Main
 
-// Get Inspired Video
-
-// End Get Inspired Video
-
-.heading {
-	padding-top: 4rem;
+// Activities
+.images {
+	width: 100%;
 }
+
+// End Activities
 
 // Carousel
 .carousel {
 	position: relative;
 	z-index: 1;
-	height: 450px;
-	width: 80%;
+	height: 300px;
+	width: 90%;
 	margin: 0 auto;
+	margin-bottom: 1.5rem;
 }
 
 .carousel-image {
@@ -528,14 +532,22 @@ body {
 	}
 
 	.toggle-nav {
+		// No mobile Navbar
 		display: none;
 	}
-	.screen {
+
+	.row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 		width: 100%;
 	}
 
-	.controls {
-		width: 100%;
+	.column {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1;
 	}
 
 	.carousel {

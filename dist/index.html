@@ -51,50 +51,108 @@
   <main class="main-container">
     <!-- Welcome to Oahu -->
     <h1 class="main-heading">Welcome to Oahu</h1>
-    <p class="main-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quibusdam aperiam aspernatur molestias totam nihil architecto, quisquam magnam deleniti voluptatem sapiente autem nesciunt quos eaque fugit facilis sit temporibus aliquid nostrum quod. Eaque aspernatur dignissimos earum ipsum consequuntur cum repellendus eligendi deserunt blanditiis neque et magnam consequatur in, commodi quisquam quam error deleniti fuga tenetur autem rem repellat tempore amet? Corporis officia iure perferendis nobis accusamus reiciendis autem est, accusantium dolores. Natus dolor illo iure consequuntur aspernatur explicabo magnam. Quis.</p>
-     <!-- End Welcome to Oahu -->
-
+        <!-- Activites -->
+        <!-- <h1 class="heading">Activites</h1> -->
+        <div class="carousel">
+          <button class="carousel-button carousel-left is-hidden">
+            <i class="fas fa-arrow-left fa-2x"></i>
+          </button>
+          <div class="carousel-track-container">
+            <ul class="carousel-track">
+              <li class="carousel-slide current-slide">
+                <img class="carousel-image" src="./images/hiking-2.jpg" alt="">
+              </li>
+              <li class="carousel-slide">
+                <img class="carousel-image" src="./images/kayaking-1.jpg" alt="">
+              </li>
+              <li class="carousel-slide">
+                <img class="carousel-image" src="./images/surf-2.jpg" alt="">
+              </li>
+            </ul> <!--End Track-->
+          </div>
+          <button class="carousel-button carousel-right">
+            <i class="fas fa-arrow-right fa-2x"></i>
+          </button>
+      
+          <div class="carousel-nav">
+            <button class="carousel-indicator current-slide"></button>
+            <button class="carousel-indicator"></button>
+            <button class="carousel-indicator"></button>
+          </div>
+        </div> <!--End carousel-->
+        <!-- End Activites -->
+    
+  
     <!-- Inspiration Video -->
     <h1 class="video-heading">Get inspired!</h1>
-    <video controls width="100%">
+    <video  controls width="100%">
       <source src="./video/complete-video.mp4" type="video/webm">
 
     </video>
-    <!-- End Inspiration Video -->
+ <!-- End Inspiration Video -->
 
-    <!-- Activites -->
-    <h1 class="heading">Activites</h1>
-    <div class="carousel">
-      <button class="carousel-button carousel-left is-hidden">
-        <i class="fas fa-arrow-left fa-2x"></i>
-      </button>
-      <div class="carousel-track-container">
-        <ul class="carousel-track">
-          <li class="carousel-slide current-slide">
-            <img class="carousel-image" src="./images/hiking-2.jpg" alt="">
-          </li>
-          <li class="carousel-slide">
-            <img class="carousel-image" src="./images/kayaking-1.jpg" alt="">
-          </li>
-          <li class="carousel-slide">
-            <img class="carousel-image" src="./images/surf-2.jpg" alt="">
-          </li>
-        </ul> <!--End Track-->
+ <!-- Activites -->
+    <section>
+      <h1 class="heading">Activites</h1>
+      <p class="main-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas officia saepe quod labore molestiae blanditiis totam, vitae nesciunt fugit error?</p>
+    </section>
+
+    <h1>Hiking</h1>
+    <div class='wrapper'>
+      <div class='row'>
+        <div class='column'>
+          <div class='column-1'>
+            Some Text in Column One
+          </div>
+        </div>
+        <div class='column'>
+          <div class='column-2'>
+            <img src="./images/hiking-3.jpg" alt="" class="images">
+          </div>
+        </div>
       </div>
-      <button class="carousel-button carousel-right">
-        <i class="fas fa-arrow-right fa-2x"></i>
-      </button>
-  
-      <div class="carousel-nav">
-        <button class="carousel-indicator current-slide"></button>
-        <button class="carousel-indicator"></button>
-        <button class="carousel-indicator"></button>
+    </div>
+    <h1>Island Tours</h1>
+    <div class='wrapper'>
+      <div class='row'>
+        <div class='column'>
+          <div class='column-1'>
+            Some Text in Column One
+          </div>
+        </div>
+        <div class='column'>
+          <div class='column-2'>
+            <img src="./images/island-tour-2.jpg" alt="" class="images">
+          </div>
+        </div>
       </div>
-    </div> <!--End carousel-->
-    <!-- End Activites -->
+    </div>
+    <h1>Water stuff</h1>
+    <div class='wrapper'>
+      <div class='row'>
+        <div class='column'>
+          <div class='column-1'>
+            Some Text in Column One
+          </div>
+        </div>
+        <div class='column'>
+          <div class='column-2'>
+            <img src="./images/surf-4.jpg" alt="" class="images">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+    
+
+  <!-- End Activites -->
+   
+
 
     <section class="packing">
-      <h1 class="main-heading heading h1-packing ">What to pack</h1>
+      <h1 class="heading h1-packing ">What to pack</h1>
       <p class="p-packing main-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas officia saepe quod labore molestiae blanditiis totam, vitae nesciunt fugit error? <span id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi possimus aliquid quo alias nam dolorem asperiores, rem voluptas repellendus nostrum!</span></p>
       <button id="readBtn">Read More</button>
     </section>
