@@ -15,3 +15,13 @@ function toggleNav() {
 }
 
 
+// Scroll effect on overlay
+const checkpoint = 300;
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= checkpoint) {
+    opacity = 1 - currentScroll / checkpoint;
+  } 
+  document.querySelector(".h1-cover-overlay").style.opacity = opacity;
+});
+

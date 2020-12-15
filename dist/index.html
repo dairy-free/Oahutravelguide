@@ -7,7 +7,6 @@
   <script src="https://kit.fontawesome.com/6057d270df.js" crossorigin="anonymous"></script>
   <script src="./js/app.js" defer></script>
   <script src="./js/carousel.js" defer></script>
-  <script src="./js/weather.js" defer></script>
   
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -22,7 +21,7 @@
     <ul class="navbar-ul-container">
       <li class="navbar-li navbar-close"><a href="#"><i class="fas fa-times fa-2x close-btn"></i></a></li>
       <li class="navbar-li"><a href="./index.html">Home</a></li>
-      <li class="navbar-li"><a href="#">Planning</a></li>
+      <li class="navbar-li"><a href="./Planning.html">Planning</a></li>
     </ul>
   </nav> <!--end container-->
 
@@ -44,13 +43,17 @@
       <button class="toggle-nav"><i class="fas fa-bars fa-3x bars "></i><p>Menu</p></button>
       <p class="nav-active"><a href="./index.html">Home</a></p>
       <h1 class="h1-banner"><a href="./index.html">O'ahu Hawaii</a></h1>
-      <p class="nav-active"><a href="#">Planning</a></p>
+      <p class="nav-active"><a href="./Planning.html">Planning</a></p>
     </div><!--End Container-->
   </header> <!--End Container-->
 <!-- End NavBar Main -->
   <main class="main-container">
+    <div class="welcome-container">
+      <h1 class="main-heading">Welcome to Oahu</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, dicta?</p>
+    </div>
+    
     <!-- Welcome to Oahu -->
-    <h1 class="main-heading">Welcome to Oahu</h1>
         <!-- Activites -->
         <!-- <h1 class="heading">Activites</h1> -->
         <div class="carousel">
@@ -66,7 +69,7 @@
                 <img class="carousel-image" src="./images/kayaking-1.jpg" alt="">
               </li>
               <li class="carousel-slide">
-                <img class="carousel-image" src="./images/surf-2.jpg" alt="">
+                <img class="carousel-image" src="./images/surf-1.jpg" alt="">
               </li>
             </ul> <!--End Track-->
           </div>
@@ -84,105 +87,70 @@
     
   
     <!-- Inspiration Video -->
-    <h1 class="video-heading">Get inspired!</h1>
-    <video  controls width="100%">
-      <source src="./video/complete-video.mp4" type="video/webm">
-
-    </video>
+    <div class="video-container">
+      <h1 class="video-heading main-heading">Get inspired!</h1>
+      <video controls width="100%">
+        <source src="./video/complete-video.mp4" type="video/webm">
+      </video>
+    </div>
+    
  <!-- End Inspiration Video -->
 
  <!-- Activites -->
-    <section>
+    <!-- <section>
       <h1 class="heading">Activites</h1>
       <p class="main-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas officia saepe quod labore molestiae blanditiis totam, vitae nesciunt fugit error?</p>
-    </section>
+    </section> -->
 
-    <h1>Hiking</h1>
+    <!-- Columns -->
     <div class='wrapper'>
       <div class='row'>
         <div class='column'>
           <div class='column-1'>
-            Some Text in Column One
+            <h1>A Title Involving Hiking</h1>
+            <p class="columns-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, repellendus qui culpa nulla quisquam optio dolorum non labore voluptate molestias ipsum, ullam similique mollitia quod cupiditate repellat numquam esse ducimus.</p>
           </div>
         </div>
         <div class='column'>
           <div class='column-2'>
-            <img src="./images/hiking-3.jpg" alt="" class="images">
+            <img src="./images/hiking-3.jpg" alt="" class="images show-on-scroll">
           </div>
         </div>
       </div>
     </div>
-    <h1>Island Tours</h1>
+    <div class='wrapper'>
+      <div class='row row-rev'>
+        <div class='column'>
+          <div class='column-1 column-reverse'>
+            <h1>A Title Involving Island Tours</h1>
+            <p class="columns-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, repellendus qui culpa nulla quisquam optio dolorum non labore voluptate molestias ipsum, ullam similique mollitia quod cupiditate repellat numquam esse ducimus.</p>
+          </div>
+        </div>
+        <div class='column'>
+          <div class='column-2'>
+            <img src="./images/island-tour-2.jpg" alt="" class="images show-on-scroll">
+          </div>
+        </div>
+      </div>
+    </div>
     <div class='wrapper'>
       <div class='row'>
         <div class='column'>
           <div class='column-1'>
-            Some Text in Column One
+            <h1>A Title Involving Water Stuff</h1>
+            <p class="columns-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, repellendus qui culpa nulla quisquam optio dolorum non labore voluptate molestias ipsum, ullam similique mollitia quod cupiditate repellat numquam esse ducimus.</p>
           </div>
         </div>
         <div class='column'>
           <div class='column-2'>
-            <img src="./images/island-tour-2.jpg" alt="" class="images">
+            <img src="./images/surf-4.jpg" alt="" class="images show-on-scroll">
           </div>
         </div>
       </div>
     </div>
-    <h1>Water stuff</h1>
-    <div class='wrapper'>
-      <div class='row'>
-        <div class='column'>
-          <div class='column-1'>
-            Some Text in Column One
-          </div>
-        </div>
-        <div class='column'>
-          <div class='column-2'>
-            <img src="./images/surf-4.jpg" alt="" class="images">
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- End Columns -->
 
     
-    
-    
-
-  <!-- End Activites -->
-   
-
-
-    <section class="packing">
-      <h1 class="heading h1-packing ">What to pack</h1>
-      <p class="p-packing main-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas officia saepe quod labore molestiae blanditiis totam, vitae nesciunt fugit error? <span id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi possimus aliquid quo alias nam dolorem asperiores, rem voluptas repellendus nostrum!</span></p>
-      <button id="readBtn">Read More</button>
-    </section>
-
-
-
-
-     <!-- Weather -->
-    
-     <div class="main-weather-container">
-      <div class="app-title">
-          <p>Current Weather</p>
-      </div>
-      <div class="notification"> </div>
-      <div class="weather-container">
-          <div class="weather-icon">
-              <img src="./images/icon-images/unknown.png" alt="">
-          </div>
-          <div class="temperature-value">
-              <p>- °<span>C</span></p>
-          </div>
-          <div class="temperature-description">
-              <p> - </p>
-          </div>
-          <div class="location">
-              <p>-</p>
-          </div>
-      </div>
-  </div>
-    <!-- End Weather -->
    
   </main>
   <footer id="footer-container">
