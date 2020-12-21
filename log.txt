@@ -1,3 +1,6 @@
+Ver 1.7
+-planning page re-added
+
 Ver 1.6
 -fixed issues with mobile and tablet views
 -added most animations 

@@ -195,11 +195,73 @@ body a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.5))), url(../dist/images/plan-image-2.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../dist/images/plan-image-2.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.2))), url(../dist/images/plan-image-2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(../dist/images/plan-image-2.jpg);
   background-size: cover;
   width: 100%;
   min-height: 350px;
+}
+
+.tiles-para {
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+.cover-image-history-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.2))), url(../dist/images/history-1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(../dist/images/history-1.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  min-height: 65vh;
+}
+
+.cover-image-know-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.2))), url(../dist/images/things-to-know-1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(../dist/images/things-to-know-1.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  min-height: 65vh;
+}
+
+.cover-image-ga-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.2))), url(../dist/images/getting-around-1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(../dist/images/getting-around-1.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  min-height: 65vh;
 }
 
 .main-container {
@@ -346,6 +408,65 @@ video {
   font-size: 1.2rem;
 }
 
+.inline-photo {
+  border: 1em solid #fff;
+  border-bottom: 4em solid #fff;
+  border-radius: .25em;
+  -webkit-box-shadow: 1em 1em 2em 0.25em rgba(0, 0, 0, 0.2);
+          box-shadow: 1em 1em 2em 0.25em rgba(0, 0, 0, 0.2);
+  margin: 2em auto;
+  opacity: 0;
+  -webkit-transform: translateY(4em) rotateZ(-5deg);
+          transform: translateY(4em) rotateZ(-5deg);
+  -webkit-transition: opacity 0.3s 0.25s ease-out, -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
+  transition: opacity 0.3s 0.25s ease-out, -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
+  transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 0.25s ease-out;
+  transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 0.25s ease-out, -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
+  width: 90%;
+  will-change: transform, opacity;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.inline-photo.is-visible {
+  opacity: 1;
+  -webkit-transform: rotateZ(-2deg);
+          transform: rotateZ(-2deg);
+}
+
+.history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.history a {
+  padding-bottom: 1.3rem;
+  font-size: 1.3rem;
+}
+
+.history a:link,
+.history a:hover,
+.history a:active,
+.history a:visited {
+  text-decoration: none;
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.travel-resources-images {
+  width: 100%;
+}
+
 #more {
   display: none;
 }
@@ -369,6 +490,23 @@ video {
 
 #readBtn:focus {
   outline: none;
+}
+
+section ul li {
+  text-decoration: none;
+  list-style-type: none;
+  padding-right: 1.5rem;
+  line-height: 2rem;
+}
+
+section ul li a:link,
+section ul li a:hover,
+section ul li a:active,
+section ul li a:visited {
+  text-decoration: none;
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
 }
 
 .main-weather-container {
@@ -611,6 +749,23 @@ video {
     height: 365px;
     width: 90%;
   }
+  .travel-resources-container .history {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    grid-row-gap: 3rem;
+    grid-column-gap: 3rem;
+    margin-bottom: 10rem;
+  }
+  .travel-resources-container .history .travel-resources-images {
+    height: 100%;
+  }
+  .travel-resources-container .history .show-title {
+    display: none;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -683,6 +838,9 @@ video {
     padding-top: 10rem;
     height: 30vh;
   }
+  .main-container .welcome-container p {
+    font-size: 1.3rem;
+  }
   .main-container .main-heading {
     font-size: 3rem;
   }
@@ -693,6 +851,9 @@ video {
   }
   .main-container .carousel .carousel-button {
     display: block;
+  }
+  .main-container .carousel .images {
+    height: 95%;
   }
   .main-container .video-container {
     height: 115vh;
@@ -711,8 +872,8 @@ video {
   .main-container .column-1 {
     padding-bottom: 15rem;
   }
-  .main-container .images {
-    height: 95%;
+  .main-container .inline-photo {
+    width: 85%;
   }
   .row {
     display: -webkit-box;
@@ -749,6 +910,21 @@ video {
   .carousel {
     height: 600px;
     width: 95%;
+  }
+  .travel-resources-container .history {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    grid-row-gap: 3rem;
+    grid-column-gap: 3rem;
+    margin-bottom: 10rem;
+  }
+  .history-para {
+    width: 70%;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */
