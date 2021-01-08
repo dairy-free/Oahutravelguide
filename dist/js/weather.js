@@ -52,7 +52,10 @@ function getWeather(latitude, longitude){
 // DISPLAY WEATHER TO UI
 function displayWeather(){
     iconElement.innerHTML = `<img src="images/icon-images/${weather.iconId}.png"/>`;
-    tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
+    let fahrenheit = celsiusToFahrenheit(weather.temperature.value);
+    fahrenheit = Math.floor(fahrenheit);
+    tempElement.innerHTML = `${fahrenheit}°<span>F</span>`;
+    weather.temperature.unit = "fahrenheit";
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
 }
@@ -69,7 +72,6 @@ tempElement.addEventListener("click", function(){
     if(weather.temperature.unit == "celsius"){
         let fahrenheit = celsiusToFahrenheit(weather.temperature.value);
         fahrenheit = Math.floor(fahrenheit);
-        
         tempElement.innerHTML = `${fahrenheit}°<span>F</span>`;
         weather.temperature.unit = "fahrenheit";
     }else{
