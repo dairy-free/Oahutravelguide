@@ -6,10 +6,6 @@ body {
 	.heading {
 		font-weight: 600;
 	}
-
-	a {
-		color: var(--main-bg-color);
-	}
 }
 
 // Colors
@@ -70,6 +66,9 @@ body {
 // Hidden & active classes
 .nav-active {
 	display: none;
+	a {
+		color: var(--main-bg-color);
+	}
 }
 // End Hidden & active classes
 
@@ -376,15 +375,15 @@ video {
 
 // Planning Page
 // Travel Resources
-.travel-resources-container {
-}
-.history {
+
+.travel-resources-content {
 	display: flex;
 	flex-direction: column;
 
 	a {
 		padding-bottom: 1.3rem;
 		font-size: 1.3rem;
+		color: var(--main-bg-color);
 	}
 	a:link,
 	a:hover,
@@ -679,7 +678,7 @@ section {
 	// Planning Page
 
 	.travel-resources-container {
-		.history {
+		.travel-resources-content {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			grid-template-rows: 1fr 1fr;
@@ -866,7 +865,7 @@ section {
 	// Planning Page
 	// Travel Resources
 	.travel-resources-container {
-		.history {
+		.travel-resources-content {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
 			grid-template-rows: 1fr;
