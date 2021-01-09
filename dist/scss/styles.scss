@@ -15,6 +15,50 @@ body {
 
 // End Colors
 
+// Home Page Overlay
+.cover-image-container {
+	min-width: 295px;
+	min-height: 500px;
+	height: 100vh;
+}
+
+.cover-image-overlay {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/cover-5.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	width: 100%;
+	height: 100%;
+	min-height: 500px;
+}
+
+.h1-cover-overlay {
+	color: white;
+}
+// End Home Page Overlay
+
+// Planning Page Overlay
+.cover-image-planning-container {
+	min-height: 350px;
+	min-width: 295px;
+}
+
+.cover-image-planning-overlay {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(../images/plan-image-2.jpg);
+	background-size: cover;
+	width: 100%;
+	min-height: 350px;
+}
+// End Planning Page Overlay
+
 // Header
 .header-main {
 	z-index: 4;
@@ -126,49 +170,6 @@ body {
 // End Header
 
 // Main
-// Home Page Overlay
-.cover-image-container {
-	min-width: 295px;
-	min-height: 500px;
-	height: 100vh;
-}
-
-.cover-image-overlay {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/cover-5.jpg);
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-background-size: cover;
-	width: 100%;
-	height: 100%;
-	min-height: 500px;
-}
-
-.h1-cover-overlay {
-	color: white;
-}
-// End Home Page Overlay
-
-// Planning Page Overlay
-.cover-image-planning-container {
-	min-height: 350px;
-	min-width: 295px;
-}
-
-.cover-image-planning-overlay {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(../images/plan-image-2.jpg);
-	background-size: cover;
-	width: 100%;
-	min-height: 350px;
-}
-// End Planning Page Overlay
 
 // Tiles
 .tiles-para {

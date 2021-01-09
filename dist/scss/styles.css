@@ -12,6 +12,60 @@ body .heading {
   --main-bg-color: #00688c;
 }
 
+.cover-image-container {
+  min-width: 295px;
+  min-height: 500px;
+  height: 100vh;
+}
+
+.cover-image-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../images/cover-5.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/cover-5.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+.h1-cover-overlay {
+  color: white;
+}
+
+.cover-image-planning-container {
+  min-height: 350px;
+  min-width: 295px;
+}
+
+.cover-image-planning-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.2))), url(../images/plan-image-2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(../images/plan-image-2.jpg);
+  background-size: cover;
+  width: 100%;
+  min-height: 350px;
+}
+
 .header-main {
   z-index: 4;
   min-width: 320px;
@@ -142,60 +196,6 @@ body .heading {
 
 .transparentBcg {
   visibility: visible;
-}
-
-.cover-image-container {
-  min-width: 295px;
-  min-height: 500px;
-  height: 100vh;
-}
-
-.cover-image-overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../images/cover-5.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/cover-5.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  width: 100%;
-  height: 100%;
-  min-height: 500px;
-}
-
-.h1-cover-overlay {
-  color: white;
-}
-
-.cover-image-planning-container {
-  min-height: 350px;
-  min-width: 295px;
-}
-
-.cover-image-planning-overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.2))), url(../images/plan-image-2.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(../images/plan-image-2.jpg);
-  background-size: cover;
-  width: 100%;
-  min-height: 350px;
 }
 
 .tiles-para {
