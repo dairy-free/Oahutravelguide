@@ -18,8 +18,7 @@ body {
 .cover-image-container {
 	min-width: 295px;
 	min-height: 500px;
-	// height: 100vh;
-	height: 600px;
+	height: 100vh;
 }
 
 .cover-image-overlay {
@@ -33,6 +32,7 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	object-fit: cover;
 	background-attachment: scroll;
 	background-attachment: fixed;
 	width: 100%;

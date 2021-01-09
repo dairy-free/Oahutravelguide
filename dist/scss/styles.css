@@ -15,7 +15,7 @@ body .heading {
 .cover-image-container {
   min-width: 295px;
   min-height: 500px;
-  height: 600px;
+  height: 100vh;
 }
 
 .cover-image-overlay {
@@ -33,6 +33,8 @@ body .heading {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-attachment: scroll;
   background-attachment: fixed;
   width: 100%;
