@@ -102,9 +102,10 @@ body {
 			text-decoration: none;
 		}
 
-		:visited,
-		:hover,
-		:active {
+		a:link,
+		a:hover,
+		a:active,
+		a:visited {
 			color: white;
 		}
 	}

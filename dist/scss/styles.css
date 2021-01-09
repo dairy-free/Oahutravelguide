@@ -120,9 +120,10 @@ body .heading {
   text-decoration: none;
 }
 
-.navbar-ul-container .navbar-li :visited,
-.navbar-ul-container .navbar-li :hover,
-.navbar-ul-container .navbar-li :active {
+.navbar-ul-container .navbar-li a:link,
+.navbar-ul-container .navbar-li a:hover,
+.navbar-ul-container .navbar-li a:active,
+.navbar-ul-container .navbar-li a:visited {
   color: white;
 }
 
