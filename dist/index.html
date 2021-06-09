@@ -7,7 +7,8 @@
   <script src="https://kit.fontawesome.com/6057d270df.js" crossorigin="anonymous"></script>
   <script src="./js/app.js" defer></script>
   <script src="./js/carousel.js" defer></script>
-  <script src="./js/swipe.js"></script>
+  <script src="./js/swipe.js" defer></script>
+  <script src="./js/weather.js" defer></script>
   <link rel="stylesheet" href="./scss/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -62,12 +63,6 @@
 
       </div>
 
-
-
-      <p class="nav-active"><a href="./index.html">Home</a></p>
-
-
-
       <p class="nav-active"><a href="./Planning.html">Planning</a></p>
 
     </div>
@@ -121,65 +116,112 @@
     <!-- End Activites -->
 
 
-    <!-- Inspiration Video -->
-    <div class="video-container">
-      <h1 class="video-heading main-heading">Get inspired!</h1>
-      <video controls width="100%">
-        <source src="./video/complete-video.mp4" type="video/webm">
-      </video>
-    </div>
 
-    <!-- End Inspiration Video -->
+    <!-- Weather -->
+
+    <div class="main-weather-container">
+      <div class="app-title">
+        <p>Current Weather</p>
+      </div>
+      <div class="notification"> </div>
+      <div class="weather-container">
+        <div class="weather-icon">
+          <img src="./images/icon-images/unknown.png" class="weather-image" alt="">
+        </div>
+        <div class="temperature-value">
+          <p>- °<span>C</span></p>
+        </div>
+        <div class="temperature-description">
+          <p> - </p>
+        </div>
+        <div class="location">
+          <p>-</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Weather -->
+
+
+
 
     <!-- Columns -->
-    <div class='wrapper'>
-      <div class='row'>
-        <div class='column'>
-          <div class='column-1'>
-            <h1>Stairway to Heaven</h1>
-            <p class="columns-p">The Haʻikū Stairs, also known as the Stairway to Heaven or Haʻikū Ladder, is a steep
-              hiking trail on the island of Oʻahu, Hawaii.[1] The total 3,922 steps span along Oahu's Ko'olau mountain
-              range.</p>
-          </div>
-        </div>
-        <div class='column'>
-          <div class='column-2'>
-            <img src="./images/hiking-3.jpg" alt="" class="show-on-scroll inline-photo">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class='wrapper'>
-      <div class='row row-rev'>
-        <div class='column'>
-          <div class='column-1 column-reverse'>
-            <h1>Island Exploration</h1>
-            <p class="columns-p"> The North Shore is the north-facing coastal area of Oʻahu between Kaʻena Point and
-              Kahuku.This area is best known for its massive waves, attracting surfers from all around the globe. </p>
-          </div>
-        </div>
-        <div class='column'>
-          <div class='column-2'>
-            <img src="./images/island-tour-2.jpg" alt="" class="show-on-scroll inline-photo">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class='wrapper'>
-      <div class='row'>
-        <div class='column'>
-          <div class='column-1'>
-            <h1>Beaches</h1>
-            <p class="columns-p">Waikiki Beach is a neighborhood of Honolulu on the south shore of the island of Oʻahu
-              in the U.S. state of Hawaii.
 
-              Waikiki is most famous for Waikiki Beach, which is one of six beaches in the district, along with Queen's
-              Beach, Kuhio Beach, Gray's Beach, Fort DeRussy Beach and Kahanamoku Beach</p>
+    <div class="grid">
+
+      <div class="grid-content">
+
+        <h1>Stairway to Heaven</h1>
+
+        <p class="columns-p">The Haʻikū Stairs, also known as the Stairway to Heaven or Haʻikū Ladder, is a steep
+          hiking trail on the island of Oʻahu, Hawaii.[1] The total 3,922 steps span along Oahu's Ko'olau mountain
+          range.</p>
+      </div>
+
+      <div class="grid-content">
+
+        <img src="./images/hiking-3.jpg" alt="" class="show-on-scroll inline-photo">
+
+      </div>
+
+    </div>
+
+    <div class="grid">
+
+      <div class="grid-content ">
+
+        <img src="./images/island-tour-2.jpg" alt="" class="show-on-scroll inline-photo">
+
+      </div>
+
+      <div class="grid-content">
+
+        <h1>Island Exploration</h1>
+
+        <p class="columns-p"> The North Shore is the north-facing coastal area of Oʻahu between Kaʻena Point and
+          Kahuku.This area is best known for its massive waves, attracting surfers from all around the globe. </p>
+
+
+      </div>
+
+    </div>
+
+    <div class="grid">
+
+      <div class="grid-content">
+
+        <h1>Beaches</h1>
+
+        <p class="columns-p">Waikiki Beach is a neighborhood of Honolulu on the south shore of the island of Oʻahu
+          in the U.S. state of Hawaii.
+
+          Waikiki is most famous for Waikiki Beach, which is one of six beaches in the district, along with Queen's
+          Beach, Kuhio Beach, Gray's Beach, Fort DeRussy Beach and Kahanamoku Beach</p>
+
+      </div>
+
+      <div class="grid-content">
+
+        <img src="./images/surf-4.jpg" alt="" class="show-on-scroll inline-photo">
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <div class='wrapper'>
+      <div class='row'>
+        <div class='column'>
+          <div class='column-1'>
+
           </div>
         </div>
         <div class='column'>
           <div class='column-2'>
-            <img src="./images/surf-4.jpg" alt="" class="show-on-scroll inline-photo">
+
           </div>
         </div>
       </div>

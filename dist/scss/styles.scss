@@ -7,6 +7,17 @@ body {
 	}
 }
 
+// Utility Classes
+
+.nav-active {
+	display: none;
+	a {
+		color: var(--main-bg-color);
+	}
+}
+
+// End Utility Classes
+
 // Colors
 :root {
 	--main-bg-color: #00688c;
@@ -106,15 +117,6 @@ body {
 	}
 }
 
-// Hidden & active classes
-.nav-active {
-	display: none;
-	a {
-		color: var(--main-bg-color);
-	}
-}
-// End Hidden & active classes
-
 // Nav Overlay
 .navbar-container {
 	position: fixed;
@@ -176,44 +178,6 @@ body {
 	font-size: 1rem;
 }
 // End Tiles
-
-// History Page Overlay
-.cover-image-history-overlay {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(../images/history-1.jpg);
-	background-size: cover;
-	object-fit: cover;
-	width: 100%;
-	min-height: 65vh;
-}
-
-// End History Page Overlay
-// Beaches Overlay
-.cover-image-know-overlay {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(../images/things-to-know-1.jpg);
-	background-size: cover;
-	object-fit: cover;
-	width: 100%;
-	min-height: 65vh;
-}
-// End Beaches Overlay
-// Getting around overlay
-.cover-image-ga-overlay {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(../images/getting-around-1.jpg);
-	background-size: cover;
-	object-fit: cover;
-	width: 100%;
-	min-height: 65vh;
-}
-// End Getting around overlay
 
 .main-container {
 	width: 76%;
@@ -341,22 +305,6 @@ video {
 
 // Columns
 
-.wrapper {
-	margin-top: 3rem;
-	margin-bottom: 6rem;
-}
-
-.column {
-	height: 100%;
-	.column-1 {
-		text-align: center;
-	}
-}
-
-.columns-p {
-	font-size: 1.2rem;
-}
-
 .inline-photo {
 	border: 1em solid #fff;
 	border-bottom: 4em solid #fff;
@@ -378,37 +326,8 @@ video {
 
 // End Columns
 
-// Planning Page
-// Travel Resources
-
-.travel-resources-content {
-	display: flex;
-	flex-direction: column;
-
-	a {
-		padding-bottom: 1.3rem;
-		font-size: 1.3rem;
-		color: var(--main-bg-color);
-	}
-	a:link,
-	a:hover,
-	a:active,
-	a:visited {
-		text-decoration: none;
-		outline: 0;
-		border: none;
-		-moz-outline-style: none;
-	}
-}
-.is-hidden {
-	display: none;
-}
-.travel-resources-images {
-	width: 100%;
-}
-// // End Travel Resources
-
 // Attractions
+
 #more {
 	display: none;
 }
@@ -843,23 +762,20 @@ section {
 	}
 
 	// Column layout
-	.row {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		width: 100%;
+
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+		:first-child {
+			margin: auto 0;
+		}
+
+		:nth-child(2) {
+			margin: auto 0;
+		}
 	}
 
-	.column {
-		display: flex;
-		flex-direction: column;
-		flex-basis: 100%;
-		flex: 1;
-	}
-
-	.row-rev {
-		flex-direction: row-reverse;
-	}
 	// End Column layout
 
 	.carousel {
