@@ -185,9 +185,10 @@ body {
 	flex-direction: column;
 	text-align: center;
 	margin: 0 auto;
+	line-height: 1.5;
 
 	.welcome-container {
-		margin-bottom: 3rem;
+		padding: 3rem 0;
 	}
 
 	.main-heading {
@@ -295,10 +296,6 @@ body {
 
 // End Carousel
 
-video {
-	margin-bottom: 5rem;
-}
-
 .images {
 	width: 100%;
 }
@@ -307,6 +304,10 @@ video {
 
 .grid {
 	display: grid;
+}
+
+.grid-content {
+	padding: 1.5rem 0;
 }
 
 .inverse-content-one {
@@ -395,8 +396,7 @@ section {
 	background-color: #fff;
 	display: block;
 	border-radius: 10px;
-	padding-bottom: 1rem;
-	padding-top: 3rem;
+	padding: 5rem 0;
 
 	.app-title p {
 		text-align: center;
@@ -716,9 +716,6 @@ section {
 		width: 80%;
 
 		.welcome-container {
-			padding-top: 10rem;
-			height: 30vh;
-
 			p {
 				font-size: 1.3rem;
 			}

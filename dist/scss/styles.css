@@ -214,10 +214,11 @@ body .heading {
           flex-direction: column;
   text-align: center;
   margin: 0 auto;
+  line-height: 1.5;
 }
 
 .main-container .welcome-container {
-  margin-bottom: 3rem;
+  padding: 3rem 0;
 }
 
 .main-container .main-heading {
@@ -329,10 +330,6 @@ body .heading {
   display: none;
 }
 
-video {
-  margin-bottom: 5rem;
-}
-
 .images {
   width: 100%;
 }
@@ -340,6 +337,10 @@ video {
 .grid {
   display: -ms-grid;
   display: grid;
+}
+
+.grid-content {
+  padding: 1.5rem 0;
 }
 
 .inverse-content-one {
@@ -436,8 +437,7 @@ section ul li a:visited {
   background-color: #fff;
   display: block;
   border-radius: 10px;
-  padding-bottom: 1rem;
-  padding-top: 3rem;
+  padding: 5rem 0;
 }
 
 .main-weather-container .app-title p {
@@ -755,10 +755,6 @@ section ul li a:visited {
   }
   .main-container {
     width: 80%;
-  }
-  .main-container .welcome-container {
-    padding-top: 10rem;
-    height: 30vh;
   }
   .main-container .welcome-container p {
     font-size: 1.3rem;
