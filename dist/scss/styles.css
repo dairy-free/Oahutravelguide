@@ -337,6 +337,23 @@ video {
   width: 100%;
 }
 
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.inverse-content-one {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.inverse-content-two {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
 .inline-photo {
   border: 1em solid #fff;
   border-bottom: 4em solid #fff;
@@ -791,6 +808,16 @@ section ul li a:visited {
   }
   .grid :nth-child(2) {
     margin: auto 0;
+  }
+  .grid .inverse-content-one {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .grid .inverse-content-two {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .carousel {
     height: 600px;

@@ -305,6 +305,18 @@ video {
 
 // Columns
 
+.grid {
+	display: grid;
+}
+
+.inverse-content-one {
+	order: 2;
+}
+
+.inverse-content-two {
+	order: 1;
+}
+
 .inline-photo {
 	border: 1em solid #fff;
 	border-bottom: 4em solid #fff;
@@ -773,6 +785,14 @@ section {
 
 		:nth-child(2) {
 			margin: auto 0;
+		}
+
+		.inverse-content-one {
+			order: 1;
+		}
+
+		.inverse-content-two {
+			order: 2;
 		}
 	}
 
