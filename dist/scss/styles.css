@@ -16,6 +16,17 @@ body .heading {
   color: var(--main-bg-color);
 }
 
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 :root {
   --main-bg-color: #00688c;
 }
@@ -204,7 +215,7 @@ body .heading {
 }
 
 .main-container {
-  width: 76%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,7 +445,7 @@ section ul li a:visited {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background-color: #fff;
+  background-color: #f0f0f0;
   display: block;
   border-radius: 10px;
   padding: 5rem 0;
