@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
 }
 
 body .heading {
@@ -34,6 +35,7 @@ html {
 
 :root {
   --main-bg-color: #00688c;
+  --light-grey: #f0f0f0;
 }
 
 .cover-image-container {
@@ -359,6 +361,16 @@ html {
   padding: 1.5rem 0;
 }
 
+.inverse-content-one,
+.inverse-content-two {
+  background-color: var(--light-grey);
+}
+
+.width-class {
+  width: 76%;
+  margin: 0 auto;
+}
+
 .inverse-content-one {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -389,6 +401,10 @@ html {
   will-change: transform, opacity;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.test-photo {
+  width: 70%;
 }
 
 .inline-photo.is-visible {
@@ -528,7 +544,7 @@ section ul li a:visited {
   width: 100%;
   margin-top: 4rem;
   height: 25vh;
-  background-color: #f0f0f0;
+  background-color: var(--light-grey);
 }
 
 .ul-social {

@@ -5,6 +5,8 @@ body {
 	.heading {
 		font-weight: 600;
 	}
+
+	overflow-x: hidden;
 }
 
 html {
@@ -35,8 +37,10 @@ html {
 // End Utility Classes
 
 // Colors
+
 :root {
 	--main-bg-color: #00688c;
+	--light-grey: #f0f0f0;
 }
 
 // End Colors
@@ -62,6 +66,7 @@ html {
 .h1-cover-overlay {
 	color: white;
 }
+
 // End Home Page Overlay
 
 // Planning Page Overlay
@@ -326,6 +331,16 @@ html {
 	padding: 1.5rem 0;
 }
 
+.inverse-content-one,
+.inverse-content-two {
+	background-color: var(--light-grey);
+}
+
+.width-class {
+	width: 76%;
+	margin: 0 auto;
+}
+
 .inverse-content-one {
 	order: 2;
 }
@@ -346,6 +361,10 @@ html {
 	width: 90%;
 	will-change: transform, opacity;
 	object-fit: cover;
+}
+
+.test-photo {
+	width: 70%;
 }
 
 .inline-photo.is-visible {
@@ -408,7 +427,6 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	// width: 100%;
 	background-color: #f0f0f0;
 	display: block;
 	border-radius: 10px;
@@ -487,7 +505,7 @@ section {
 	width: 100%;
 	margin-top: 4rem;
 	height: 25vh;
-	background-color: #f0f0f0;
+	background-color: var(--light-grey);
 }
 
 .ul-social {
