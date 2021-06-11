@@ -8,6 +8,10 @@ body .heading {
   font-weight: 600;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .nav-active {
   display: none;
 }
@@ -22,7 +26,8 @@ body .heading {
 }
 
 .wrapper {
-  width: 90%;
+  width: 100%;
+  max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -444,7 +449,6 @@ section ul li a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   background-color: #f0f0f0;
   display: block;
   border-radius: 10px;
