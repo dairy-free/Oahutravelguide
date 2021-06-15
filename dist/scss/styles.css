@@ -674,6 +674,9 @@ section ul li a:visited {
   .inline-photo {
     width: 85%;
   }
+  .photos {
+    height: 700px;
+  }
   .grid {
     display: -ms-grid;
     display: grid;
