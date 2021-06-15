@@ -2,10 +2,6 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Raleway', sans-serif;
-	.heading {
-		font-weight: 600;
-	}
-
 	overflow-x: hidden;
 }
 
@@ -18,6 +14,7 @@ html {
 :root {
 	--main-bg-color: #00688c;
 	--light-grey: #f0f0f0;
+	--dark-off: #293251;
 }
 
 // End Colors
@@ -34,6 +31,12 @@ html {
 	max-width: 50rem;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.heading {
+	font-size: 1.3rem;
+	color: var(--dark-off);
+	font-weight: 595;
 }
 
 // End Utility Classes
@@ -153,15 +156,6 @@ html {
 
 // End Navbar
 
-// Main
-
-// Tiles
-.tiles-para {
-	line-height: 2rem;
-	font-size: 1rem;
-}
-// End Tiles
-
 .main-container {
 	width: 80%;
 	display: flex;
@@ -187,8 +181,6 @@ html {
 		}
 	}
 }
-
-// End Main
 
 // Carousel
 .carousel {
@@ -279,114 +271,6 @@ html {
 
 // End Carousel
 
-.images {
-	width: 100%;
-}
-
-// Columns
-
-.grid {
-	display: grid;
-}
-
-.grid-content {
-	padding: 1.5rem 0;
-}
-
-.inverse-content-one,
-.inverse-content-two {
-	background-color: var(--light-grey);
-}
-
-.width-class {
-	width: 76%;
-	margin: 0 auto;
-}
-
-.inverse-content-one {
-	order: 2;
-}
-
-.wrapper h1 {
-	padding-bottom: 1rem;
-}
-
-.inverse-content-two {
-	order: 1;
-}
-
-.inline-photo {
-	border: 1em solid #fff;
-	border-bottom: 4em solid #fff;
-	border-radius: .25em;
-	box-shadow: 1em 1em 2em .25em rgba(0, 0, 0, .2);
-	margin: 2em auto;
-	opacity: 0;
-	transform: translateY(4em) rotateZ(-5deg);
-	transition: transform 4s .25s cubic-bezier(0, 1, .3, 1), opacity .3s .25s ease-out;
-	width: 90%;
-	will-change: transform, opacity;
-	object-fit: cover;
-}
-
-.photos {
-	width: 70%;
-}
-
-.inline-photo.is-visible {
-	opacity: 1;
-	transform: rotateZ(-2deg);
-}
-
-// End Columns
-
-// Attractions
-
-#more {
-	display: none;
-}
-
-#readBtn {
-	background-color: white;
-	color: black;
-	border: 2px solid #00688c;
-	width: 150px;
-	height: 35px;
-	font-size: 1rem;
-	transition-duration: 0.4s;
-	font-family: 'Raleway', sans-serif;
-}
-
-#readBtn:hover {
-	background-color: #00688c;
-	color: white;
-}
-
-#readBtn:focus {
-	outline: none;
-}
-
-section {
-	ul li {
-		text-decoration: none;
-		list-style-type: none;
-		padding-right: 1.5rem;
-		line-height: 2rem;
-
-		a:link,
-		a:hover,
-		a:active,
-		a:visited {
-			text-decoration: none;
-			outline: 0;
-			border: none;
-			-moz-outline-style: none;
-		}
-	}
-}
-
-// End Attractions
-
 // Weather
 
 .main-weather-container {
@@ -464,6 +348,122 @@ section {
 }
 
 // End Weather
+
+.images {
+	width: 100%;
+}
+
+// Columns
+
+.grid {
+	display: grid;
+}
+
+.grid-content {
+	padding: 1.5rem 0;
+}
+
+.inverse-content-one,
+.inverse-content-two {
+	background-color: var(--light-grey);
+}
+
+.width-class {
+	width: 76%;
+	margin: 0 auto;
+}
+
+.inverse-content-one {
+	order: 2;
+}
+
+.wrapper h1 {
+	padding-bottom: 1rem;
+}
+
+.inverse-content-two {
+	order: 1;
+}
+
+.inline-photo {
+	border: 1em solid #fff;
+	border-bottom: 4em solid #fff;
+	border-radius: .25em;
+	box-shadow: 1em 1em 2em .25em rgba(0, 0, 0, .2);
+	margin: 2em auto;
+	opacity: 0;
+	transform: translateY(4em) rotateZ(-5deg);
+	transition: transform 4s .25s cubic-bezier(0, 1, .3, 1), opacity .3s .25s ease-out;
+	width: 90%;
+	will-change: transform, opacity;
+	object-fit: cover;
+}
+
+.photos {
+	width: 70%;
+}
+
+.inline-photo.is-visible {
+	opacity: 1;
+	transform: rotateZ(-2deg);
+}
+
+// End Columns
+
+// Planning Page
+
+.attractions {
+	padding: 2rem 0;
+}
+
+#more {
+	display: none;
+}
+
+#readBtn {
+	background-color: white;
+	color: black;
+	border: 2px solid #00688c;
+	width: 150px;
+	height: 35px;
+	font-size: 1rem;
+	transition-duration: 0.4s;
+	font-family: 'Raleway', sans-serif;
+}
+
+#readBtn:hover {
+	background-color: #00688c;
+	color: white;
+}
+
+#readBtn:focus {
+	outline: none;
+}
+
+section {
+	ul li {
+		text-decoration: none;
+		list-style-type: none;
+		padding-right: 1.5rem;
+		line-height: 2rem;
+
+		a:link,
+		a:hover,
+		a:active,
+		a:visited {
+			text-decoration: none;
+			outline: 0;
+			border: none;
+			-moz-outline-style: none;
+		}
+	}
+}
+
+iframe {
+	width: 100%;
+	height: 75%;
+}
+
 // End Planning Page
 
 // Footer
@@ -672,6 +672,10 @@ section {
 				display: block;
 			}
 		}
+	}
+
+	.temperature-value {
+		width: 8%;
 	}
 
 	.inline-photo {
