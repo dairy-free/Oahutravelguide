@@ -13,14 +13,16 @@ html {
 	scroll-behavior: smooth;
 }
 
-// Utility Classes
+// Colors
 
-.nav-active {
-	display: none;
-	a {
-		color: var(--main-bg-color);
-	}
+:root {
+	--main-bg-color: #00688c;
+	--light-grey: #f0f0f0;
 }
+
+// End Colors
+
+// Utility Classes
 
 .full-bleed {
 	width: 100vw;
@@ -35,15 +37,6 @@ html {
 }
 
 // End Utility Classes
-
-// Colors
-
-:root {
-	--main-bg-color: #00688c;
-	--light-grey: #f0f0f0;
-}
-
-// End Colors
 
 // Home Page Overlay
 .cover-image-container {
@@ -572,10 +565,6 @@ section {
 		margin: 0 auto;
 	}
 
-	.images {
-		// width: 105%;
-	}
-
 	// Column layout
 
 	.inline-photo {
@@ -615,8 +604,48 @@ section {
 	.h1-cover-overlay {
 		font-size: 50px;
 	}
-	.header {
+
+	.navbar-container {
+		position: absolute;
+		top: 0;
+		left: 0;
 		width: 100%;
+		background: transparent;
+		transform: translateX(0%);
+	}
+
+	.navbar {
+		display: unset;
+
+		ul {
+			width: 20%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			padding-top: 1.3rem;
+		}
+
+		.navbar-li {
+			list-style-type: none;
+			font-size: 1.5rem;
+			line-height: unset;
+
+			a {
+				text-decoration: none;
+			}
+
+			a:link,
+			a:hover,
+			a:active,
+			a:visited {
+				color: var(--main-bg-color);
+			}
+		}
+	}
+
+	.toggle-nav,
+	.navbar-close {
+		display: none;
 	}
 
 	// End Navbar
@@ -635,22 +664,18 @@ section {
 		}
 
 		.carousel {
-			height: 70vh;
+			height: 50vh;
 			width: 80%;
 			padding-bottom: 10rem;
 
 			.carousel-button {
 				display: block;
 			}
-
-			.images {
-				height: 95%;
-			}
 		}
+	}
 
-		.inline-photo {
-			width: 85%;
-		}
+	.inline-photo {
+		width: 85%;
 	}
 
 	// Column layout
@@ -659,12 +684,13 @@ section {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 
-		:first-child {
-			margin: auto 0;
-		}
-
-		:nth-child(2) {
-			margin: auto 0;
+		.wrapper,
+		.grid-content {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 		}
 
 		.inverse-content-one {
@@ -676,48 +702,9 @@ section {
 			order: 2;
 			height: 80%;
 		}
-
-		.width-class {
-			// width: 76%;
-			// margin: unset;
-		}
-
-		.photos {
-			// width: 70%;
-		}
 	}
 
 	// End Column layout
-
-	.carousel {
-		height: 600px;
-		width: 95%;
-	}
-
-	// Planning Page
-	// Travel Resources
-	.travel-resources-container {
-		.travel-resources-content {
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
-			grid-template-rows: 1fr;
-			grid-row-gap: 3rem;
-			grid-column-gap: 3rem;
-			margin-bottom: 10rem;
-		}
-	}
-	// End Travel Resources
-	.history-para {
-		width: 70%;
-		margin: 0 auto;
-	}
-
-	.temperature-value {
-		width: 10%;
-		margin: 0 auto;
-	}
-
-	// End Planning Page
 }
 
 // End Desktop
