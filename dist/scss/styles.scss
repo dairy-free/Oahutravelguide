@@ -81,66 +81,30 @@ html {
 }
 // End Planning Page Overlay
 
-// Header
-.header-main {
+// Navbar
+
+.header-wrapper {
 	z-index: 4;
 	background-color: #ffffff;
 	height: 10vh;
 	position: sticky;
 	top: 0;
+	left: 0;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.header-container {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	color: var(--main-bg-color);
-	margin: 0 auto;
-
-	.hamburger-menu-container {
-		padding-left: 1.5rem;
-		width: 30%;
-	}
-
-	.title-container {
-		width: 50%;
-	}
-
-	.toggle-nav {
-		width: 18%;
-		border: none;
-		cursor: pointer;
-		background: white;
-		color: var(--main-bg-color);
-
-		p {
-			font-size: 1rem;
-			line-height: 0;
-			margin: 0;
-			padding: 0;
-			padding-top: 0.7rem;
-		}
-	}
-
-	.title {
-		font-family: 'Pacifico', cursive;
-		font-weight: 200;
-
-		a {
-			text-decoration: none;
-			color: var(--main-bg-color);
-		}
-	}
-
-	.header-items {
-		display: inline;
-	}
+.hamburger-menu-container {
+	padding-top: 1rem;
 }
 
-// Nav Overlay
+.toggle-nav {
+	width: 18%;
+	border: none;
+	cursor: pointer;
+	background: white;
+	color: var(--main-bg-color);
+}
+
 .navbar-container {
 	position: fixed;
 	top: 0;
@@ -153,19 +117,20 @@ html {
 	transition: transform 0.7s ease;
 }
 
-.navbar-ul-container {
-	height: 80%;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+.navbar {
+	height: 80vh;
+	display: grid;
+	place-items: center;
+
+	.navbar-close {
+		padding: 1rem 2rem;
+	}
 
 	.navbar-li {
 		list-style-type: none;
 		font-size: 2.5rem;
-		line-height: 5rem;
+		line-height: 2;
+
 		a {
 			text-decoration: none;
 		}
@@ -190,8 +155,8 @@ html {
 .transparentBcg {
 	visibility: visible;
 }
-// End Nav Overlay
-// End Header
+
+// End Navbar
 
 // Main
 

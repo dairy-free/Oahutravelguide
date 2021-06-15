@@ -82,71 +82,28 @@ html {
   width: 100%;
 }
 
-.header-main {
+.header-wrapper {
   z-index: 4;
   background-color: #ffffff;
   height: 10vh;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  left: 0;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.header-container {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: var(--main-bg-color);
-  margin: 0 auto;
+.hamburger-menu-container {
+  padding-top: 1rem;
 }
 
-.header-container .hamburger-menu-container {
-  padding-left: 1.5rem;
-  width: 30%;
-}
-
-.header-container .title-container {
-  width: 50%;
-}
-
-.header-container .toggle-nav {
+.toggle-nav {
   width: 18%;
   border: none;
   cursor: pointer;
   background: white;
   color: var(--main-bg-color);
-}
-
-.header-container .toggle-nav p {
-  font-size: 1rem;
-  line-height: 0;
-  margin: 0;
-  padding: 0;
-  padding-top: 0.7rem;
-}
-
-.header-container .title {
-  font-family: 'Pacifico', cursive;
-  font-weight: 200;
-}
-
-.header-container .title a {
-  text-decoration: none;
-  color: var(--main-bg-color);
-}
-
-.header-container .header-items {
-  display: inline;
 }
 
 .navbar-container {
@@ -165,39 +122,31 @@ html {
   transition: transform 0.7s ease, -webkit-transform 0.7s ease;
 }
 
-.navbar-ul-container {
-  height: 80%;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.navbar {
+  height: 80vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
-.navbar-ul-container .navbar-li {
+.navbar .navbar-close {
+  padding: 1rem 2rem;
+}
+
+.navbar .navbar-li {
   list-style-type: none;
   font-size: 2.5rem;
-  line-height: 5rem;
+  line-height: 2;
 }
 
-.navbar-ul-container .navbar-li a {
+.navbar .navbar-li a {
   text-decoration: none;
 }
 
-.navbar-ul-container .navbar-li a:link,
-.navbar-ul-container .navbar-li a:hover,
-.navbar-ul-container .navbar-li a:active,
-.navbar-ul-container .navbar-li a:visited {
+.navbar .navbar-li a:link,
+.navbar .navbar-li a:hover,
+.navbar .navbar-li a:active,
+.navbar .navbar-li a:visited {
   color: white;
 }
 
