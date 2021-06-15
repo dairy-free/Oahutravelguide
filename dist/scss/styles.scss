@@ -95,10 +95,11 @@ html {
 
 .hamburger-menu-container {
 	padding-top: 1rem;
+	padding-left: 1rem;
+	height: 100%;
 }
 
 .toggle-nav {
-	width: 18%;
 	border: none;
 	cursor: pointer;
 	background: white;
@@ -143,6 +144,7 @@ html {
 		}
 	}
 }
+
 .show-nav {
 	transform: translateX(0);
 	transition: transform 0.7 ease;
@@ -557,8 +559,17 @@ section {
 
 // Tablet
 @media (min-width: 768px) {
+	.header-wrapper {
+		height: 8vh;
+	}
+
 	.main-container {
 		width: 90%;
+	}
+
+	.temperature-value {
+		width: 20%;
+		margin: 0 auto;
 	}
 
 	.images {
@@ -589,62 +600,7 @@ section {
 
 	// Planning Page
 
-	.travel-resources-container {
-		.travel-resources-content {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 1fr 1fr;
-			grid-row-gap: 3rem;
-			grid-column-gap: 3rem;
-			margin-bottom: 10rem;
-
-			.travel-resources-images {
-				height: 100%;
-			}
-
-			.show-title {
-				display: none;
-			}
-		}
-	}
-
-	.temperature-value {
-		width: 20%;
-		margin: 0 auto;
-	}
-
 	// End Planning Page
-}
-
-// Landscape Tablet
-@media (min-width: 1000px) {
-	.header-container {
-		width: 60%;
-		margin: 0 auto;
-		justify-content: space-between;
-		a:link,
-		a:hover,
-		a:active,
-		a:visited {
-			text-decoration: none;
-			outline: 0;
-			border: none;
-			-moz-outline-style: none;
-		}
-	}
-	.toggle-nav {
-		display: none;
-	}
-
-	.nav-active {
-		display: block;
-		font-size: 1.5rem;
-	}
-
-	.carousel {
-		height: 450px;
-		width: 95%;
-	}
 }
 
 // End Tablet
@@ -661,29 +617,6 @@ section {
 	}
 	.header {
 		width: 100%;
-	}
-	.header-container {
-		width: 50%;
-		margin: 0 auto;
-		justify-content: space-between;
-		a:link,
-		a:hover,
-		a:active,
-		a:visited {
-			text-decoration: none;
-			outline: 0;
-			border: none;
-			-moz-outline-style: none;
-		}
-	}
-	.nav-active {
-		display: block;
-		font-size: 1.5rem;
-	}
-
-	.toggle-nav {
-		// No mobile Navbar
-		display: none;
 	}
 
 	// End Navbar
@@ -715,35 +648,9 @@ section {
 			}
 		}
 
-		.video-container {
-			height: 115vh;
-		}
-
-		video {
-			width: 80%;
-			margin: 0 auto;
-		}
-
-		// Columns
-
-		.wrapper {
-			height: 125vh;
-			padding-bottom: 10rem;
-		}
-
-		.wrapper:last-child {
-			padding-bottom: 0;
-		}
-
-		.column-1 {
-			padding-bottom: 15rem;
-		}
-
 		.inline-photo {
 			width: 85%;
 		}
-
-		// End Columns
 	}
 
 	// Column layout
@@ -762,10 +669,21 @@ section {
 
 		.inverse-content-one {
 			order: 1;
+			height: 80%;
 		}
 
 		.inverse-content-two {
 			order: 2;
+			height: 80%;
+		}
+
+		.width-class {
+			// width: 76%;
+			// margin: unset;
+		}
+
+		.photos {
+			// width: 70%;
 		}
 	}
 
