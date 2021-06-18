@@ -36,7 +36,7 @@ html {
 .heading {
 	font-size: 1.3rem;
 	color: var(--dark-off);
-	font-weight: 595;
+	font-weight: 600;
 }
 
 // End Utility Classes
@@ -413,7 +413,9 @@ html {
 // Planning Page
 
 .attractions {
-	padding: 2rem 0;
+	width: 76%;
+	margin: 0 auto;
+	padding: 3rem 0;
 }
 
 #more {
@@ -459,9 +461,13 @@ section {
 	}
 }
 
+.video-container {
+	height: 35vh;
+}
+
 iframe {
-	width: 100%;
-	height: 75%;
+	width: 90%;
+	height: 90%;
 }
 
 // End Planning Page
@@ -713,6 +719,18 @@ iframe {
 	}
 
 	// End Column layout
+
+	// Planning Page
+
+	.video-container {
+		height: 50vh;
+		margin-bottom: 2rem;
+	}
+
+	iframe {
+		width: 75%;
+		height: 100%;
+	}
 }
 
 // End Desktop
